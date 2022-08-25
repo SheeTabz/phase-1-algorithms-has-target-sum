@@ -1,8 +1,9 @@
 function hasTargetSum(array, target) {
   // Write your algorithm here
- 
+  // iterate through the array to get the first number
 for(let i = 0; i < (array.length - 1); i++) {
   // console.log(array[i])
+  // iterate over the remaining numbers
    for(let j = (i + 1); j < array.length; j++) {  
       // console.log(array[j])
    if(array[i] + array[j] === target){
