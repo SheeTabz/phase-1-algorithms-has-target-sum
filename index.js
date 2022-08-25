@@ -1,6 +1,17 @@
 function hasTargetSum(array, target) {
   // Write your algorithm here
+ 
+for(let i = 0; i < (array.length - 1); i++) {
+  // console.log(array[i])
+   for(let j = (i + 1); j < array.length; j++) {  
+      // console.log(array[j])
+   if(array[i] + array[j] === target){
+    return true
+   }}
 }
+return false
+}
+
 
 /* 
   Write the Big O time complexity of your function here
@@ -8,6 +19,17 @@ function hasTargetSum(array, target) {
 
 /* 
   Add your pseudocode here
+  the function takes in two arguments an array and a number and returns true if any two numbers 
+  in the array addds up to the second and returns false if not so
+
+iterate through the array to get the first number
+ iterate over the remaining numbers
+  if the the first number added to the second number gives results to the second argument
+    return true
+     else return false
+
+
+
 */
 
 /*
